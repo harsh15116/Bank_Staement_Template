@@ -525,7 +525,7 @@ let urlLink='https://bank-staement-template-1.onrender.com/' ;
 
 app.get('/',(req,res)=>{
   
-    next = urlLink;
+    next = urlLink+'page2';
    
      res.render("page1", { pageobj1,next });
 })
@@ -533,7 +533,7 @@ app.get("/page2", (req, res) => {
  
   let previous=urlLink;
   let str=urlLink;
-  str+='page2';
+  str+='page3';
   next=str;
    res.render("page2", { list,accountNumber,previous,next });
 });
