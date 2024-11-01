@@ -552,7 +552,7 @@ app.get("/page4", (req, res) => {
    let str = urlLink;
    str += "/page5";
    next = str;
-  res.render("page4", { fees, date, accountNumber });
+  res.render("page4", { fees, date, accountNumber,previous,next });
 });
 app.get("/page5", (req, res) => {
   let previous = urlLink;
