@@ -521,7 +521,7 @@ fees = [
 
 accountNumber = "123456789";
 date = { startDate: "28 JAN 2020", endDate: " 28 FEB 2020" };
-let urlLink='https://bank-staement-template-1.onrender.com' ;
+let urlLink='https://bank-staement-template-1.onrender.com/' ;
 
 app.get('/',(req,res)=>{
   
@@ -533,13 +533,13 @@ app.get("/page2", (req, res) => {
  
   let previous=urlLink;
   let str=urlLink;
-  str+='/page2';
+  str+='page2';
   next=str;
    res.render("page2", { list,accountNumber,previous,next });
 });
 app.get("/page3", (req, res) => {
  let previous = urlLink;
- previous+='/page2'
+ previous+='page2'
  let str = urlLink;
  str += '/page4';
  next = str;
@@ -548,15 +548,15 @@ app.get("/page3", (req, res) => {
 });
 app.get("/page4", (req, res) => {
    let previous = urlLink;
-   previous += "/page3";
+   previous += "page3";
    let str = urlLink;
-   str += "/page5";
+   str += "page5";
    next = str;
   res.render("page4", { fees, date, accountNumber,previous,next });
 });
 app.get("/page5", (req, res) => {
   let previous = urlLink;
-  previous += '/page4';
+  previous += 'page4';
   res.render("page5", { accountNumber,previous });
 });
 
