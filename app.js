@@ -548,8 +548,9 @@ app.get("/page3", (req, res) => {
 });
 app.get("/page4", (req, res) => {
    let previous = urlLink;
-   previous += "page3";
    let str = urlLink;
+   previous += "page3";
+   
    str += "page5";
    next = str;
   res.render("page4", { fees, date, accountNumber,previous,next });
