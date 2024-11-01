@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/page4.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page4">
+        
+    <div class="ANZ-Account">
+    <div>
+    <div class="ANZ">
+    ANZ ACCESS ADVANTAGE STATEMENT
+    </div>
+
+    <div class="Account">
+   Account Number <%=accountNumber%>
+    </div>
+    </div>
+    </div>
+    
+<div >
+Fee Summary
+
+</div>
+<hr class="under-line-total">
+<div class="Fees-charged">
+Fees Charged for period: <%= date.startDate %> to <%= date.endDate %>
+</div>
+
+<div class="product">
+           <div class="row">
+<div class="Summary bolder">Summary of ANZ Transaction Fees</div>
+
+
+<div class="Transaction-Details bolder">
+<div class="heading"></div>
+<div>Transactions
+Total Free Additional</div>
+
+</div>
+<div class="PerTransaction bolder">Fee Per
+Transaction
+($)</div>
+<div class="Amount  bolder">Amount
+Waived
+($)</div>
+<div class="Balance bolder">Total
+Charge
+($)</div>
+
+</div>
+<hr>
+  </div>
+  <!-- ----------------------------------------------------------- -->
+
+<div class="product">
+           <div class="row">
+<div class="Summary">
+<div><b>SERVICE FEES</b></div>
+<div>MONTHLY ACCOUNT SERVICE FEE</div>    
+</div>
+
+
+<div class="Transaction-Details bolder">
+<div class="heading"></div>
+<div></div>
+
+</div>
+<div class="PerTransaction bolder">
+
+</div>
+<div class="Amount">
+  <%=fees[0].servicefees_waved%>
+</div>
+<div class="Balance bolder">
+</div>
+
+</div>
+<hr>
+  </div>
+  <!-- ------------------------------- -->
+
+<div class="product">
+           <div class="row">
+<div class="Summary">
+<div><b>Total Account Service Fees</b></div>
+<div></div>    
+</div>
+
+
+<div class="Transaction-Details bolder">
+<div class="heading"></div>
+<div></div>
+
+</div>
+<div class="PerTransaction bolder">
+
+</div>
+<div class="Amount  bolder">
+
+</div>
+<div class="Balance bolder">
+     <%=fees[1].TotalAccount%>
+</div>
+
+</div>
+<hr>
+  </div>
+    <!-- ------------------------------- -->
+
+<div class="product">
+           <div class="row">
+<div class="Summary">
+<div><b>Total Bank Account Fees Charged</b></div>
+<div></div>    
+</div>
+
+
+<div class="Transaction-Details bolder">
+<div class="heading"></div>
+<div></div>
+
+</div>
+<div class="PerTransaction bolder">
+
+</div>
+<div class="Amount  bolder">
+
+</div>
+<div class="Balance bolder">
+    <%=fees[1].TotalBank%>
+</div>
+
+</div>
+<hr>
+  </div>
+<div class="PleaseNote">
+    <b>Please note:</b> Overseas transaction fees, overseas ATM fees and non ANZ ATM operator fees not included
+</div>
+<!-- ------------------------ -->
+
+<!-- ---------------------------- -->
+ <div class="Fees-charged">
+<hr class="under-line-total">
+<!-- date = { startDate: "28 JAN 2020", endDate: " 28 FEB 2020" }; -->
+Fees Charged for period: <%= date.startDate %> to <%= date.endDate %>
+</div>
+
+<div class="product">
+           <div class="row">
+<div class="Summary1 bolder">Summary of ANZ Transaction Fees</div>
+
+
+<div class="Transaction-Details1 bolder">
+<div class="heading1"></div>
+<div>Transactions
+Total Free Additional</div>
+
+</div>
+<div class="PerTransaction1 bolder">Fee Per
+Transaction
+($)</div>
+<div class="Amount1  bolder">
+</div>
+<div class="Balance1 bolder">Total
+Charge
+($)</div>
+
+</div>
+<hr>
+  </div>
+  <!-- ----------------------------------------------------------- -->
+
+<div class="product">
+           <div class="row">
+<div class="Summary1">
+<div><b>SERVICE FEES</b></div>
+<div>MONTHLY ACCOUNT SERVICE FEE</div>    
+</div>
+
+
+<div class="Transaction-Details1 bolder">
+<div class="heading"></div>
+<div></div>
+
+</div>
+<div class="PerTransaction1 bolder">
+
+</div>
+<div class="Amount1">
+
+</div>
+<div class="Balance1">
+  <%=fees[1].servicefees%>
+</div>
+
+</div>
+<hr>
+  </div>
+  <!-- ------------------------------- -->
+
+<div class="product">
+           <div class="row">
+<div class="Summary1">
+<div><b>Total Account Service Fees</b></div>
+<div></div>    
+</div>
+
+
+<div class="Transaction-Details1 bolder">
+<div class="heading"></div>
+<div></div>
+
+</div>
+<div class="PerTransaction1 bolder">
+
+</div>
+<div class="Amount1  bolder">
+
+</div>
+<div class="Balance1 bolder">
+    <%=fees[1].TotalAccount%>
+</div>
+
+</div>
+<hr>
+  </div>
+    <!-- ------------------------------- -->
+
+<div class="product">
+           <div class="row">
+<div class="Summary1">
+<div><b>Total Bank Account Fees Charged</b></div>
+<div></div>    
+</div>
+
+
+<div class="Transaction-Details1 bolder">
+<div class="heading1"></div>
+<div></div>
+
+</div>
+<div class="PerTransaction1 bolder">
+
+</div>
+<div class="Amount1  bolder">
+
+</div>
+
+<div class="Balance1 bolder">
+    <%=fees[1].TotalBank%>
+</div>
+
+</div>
+<hr>
+  </div>
+<div class="PleaseNote">
+    <b>Please note:</b> Overseas transaction fees, overseas ATM fees and non ANZ ATM operator fees not included
+</div>
+<!-- ------------------------ -->
+<div class="PleaseNote">
+    <b>Please note:</b> Your fee cycle may not always reconcile with your statement cycle. This statement date ends on 30/04/20 and the monthly
+fee cycle, as appears above, ended on 30/04/20.
+</div>
+<div>ANZ FEE Saving Tip</div>
+
+
+<div class="paragraph">
+  <p>Easy access <b>with ANZ Internet Banking and goMoney<sup>TM</sup></b></p>
+  <p>
+Accessing your money when and where you want is easy with ANZ Internet Banking and ANZ goMoney<sup>TM</sup> App. You can
+view account balances, transfer money, pay bills or pay friends.</p>
+ANZ goMoney is a registered trade mark of Australia and New Zealand Banking Group Limited (ANZ) ABN 11 005 357 522.</p>  
+</div>
+  <div class="Page4of5">
+  page 4 of 5
+  </div>
+    <!-- const list = [
+  {
+    Date: "Date",
+    heading: "Transaction Details",
+    value: "WithDrawal($)",
+    Deposite: "Deposite($)",
+    Balance: "Balance($)"
+  },{
+     Date: "Date",
+    Transaction: "Transaction",
+    Withdrawals: "WithDrawal",
+    Deposite: "Deposite",
+    Balance: "Balance"
+  }
+]; -->
+
+
+</div>
+<div class="rapper-XPRCAP0021">
+<div class="XPRCAP0021" >XPRCAP0021-18032111214</div>
+</div>
+
+
+<div class="next-prev">
+    <div>
+<a href="http://localhost:3000/page3">< prev</a>
+</div>
+ <div>
+<a href="http://localhost:3000/page5">Next  ></a>
+</div>
+</div>
+
+</body>
+</html>

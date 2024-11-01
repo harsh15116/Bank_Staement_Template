@@ -1,0 +1,154 @@
+body{
+     margin-right:10%;
+    margin-left: 10%;
+      background-color: white;
+     font-family: Arial, Helvetica, sans-serif;
+     color: black;
+}
+.page2{
+   margin-right:5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    
+  
+}
+.ANZ-Account{
+    margin-top: 5%;
+    display: flex;
+    margin-bottom: 5%;
+    
+    justify-content: right;
+   text-align: right;
+}
+.ANZ{
+     font-size: 30px;
+    color:rgb(25, 161, 215);
+   font-weight: 600;
+}
+
+.row{
+    display: flex;
+    height: auto;
+    font-size: medium;
+}
+.PerTransaction
+{ background-color: rgb(255, 251, 251);
+   width:20%;
+   text-align: right;
+}
+.Summary{
+  background-color: rgb(255, 251, 251);
+  width:30%;
+}
+.Transaction-Details{
+    background-color: rgb(255, 251, 251);
+    width: 15%;
+    text-align: center;
+}
+.Amount{
+    background-color: rgb(255, 251, 251);
+  width:15%;
+  text-align: right;
+}
+
+.Balance{
+     background-color: rgb(255, 251, 251);
+    width: 15%;
+    text-align: right;
+}
+.heading{
+    font-weight:600;
+}
+.bolder{
+    font-weight: 600;
+}
+.Page2of5{
+    text-align: right;
+    margin-top: 15%;
+}
+.under-line-total{
+   height: 2px;
+   background-color: black;
+   margin-bottom: -0.5px;
+}
+.Fees-charged{
+   font-size: small;
+   margin-bottom: 5px;
+}
+.PleaseNote{
+    font-size: smaller;
+    margin-bottom: 10vh;
+}
+
+.PerTransaction1
+{ background-color: rgb(255, 251, 251);
+   width:20%;
+   text-align: right;
+}
+.Summary1{
+  background-color: rgb(255, 251, 251);
+  width:45%;
+}
+.Transaction-Details1{
+    background-color: rgb(255, 251, 251);
+    width: 15%;
+    text-align: center;
+}
+.Amount1{
+    background-color: rgb(255, 251, 251);
+  width:0%;
+  text-align: right;
+}
+
+.Balance1{
+     background-color: rgb(255, 251, 251);
+    width: 15%;
+    text-align: right;
+}
+.paragraph{
+    font-size: small;
+}
+
+.rapper-XPRCAP0021{
+ 
+
+
+
+}
+.XPRCAP0021{
+   transform: rotate(90deg);
+display: flex;
+
+position: relative;
+width: 50vh;
+
+margin-left: 155vh;
+z-index: 1;
+font-size: xx-small;
+margin-top: 7vh;
+
+}
+
+.rapper-XPRCAP0021{
+ 
+margin-top: 0%;
+
+
+}
+.Page4of5{
+    text-align: right;
+    margin-top: 25%;
+}
+
+.next-prev{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap : 10%;
+}
+.Fees-charged{
+    margin-top:;
+}

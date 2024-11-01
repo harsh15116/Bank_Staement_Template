@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/page2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page2">
+        
+    <div class="ANZ-Account">
+    <div>
+    <div class="ANZ">
+    ANZ ACCESS ADVANTAGE STATEMENT
+    </div>
+
+    <div class="Account">
+   Account Number <%= accountNumber %>
+    </div>
+    </div>
+    </div>
+    
+<div class="Transaction-Please">
+<div class="Transaction">Transaction Details</div>
+<div>Please retain this statement for taxation purposes</div>
+</div>
+
+<div class="product">
+           <div class="row">
+<div class="Date">Date</div>
+
+
+<div class="Transaction-Details">
+<div class="heading"></div>
+<div>Transaction-Details</div>
+
+</div>
+<div class="Withdrawals">Withdrawals($)</div>
+<div class="Deposits">Deposits($)</div>
+<div class="Balance">Balance($)</div>
+
+</div>
+<hr>
+
+        </div>
+<% list.forEach(function(product,index) { %>
+<% if (index === 0 || index === 1) { %>
+    <div class="product">
+        <div class="row">
+            <div class="Date bolder"><%= product.Date %></div>
+
+            <div class="Transaction-Details bolder">
+                <div class="heading bolder"><%= product.heading %></div>
+                <div><%= product.value %></div>
+            </div>
+
+            <div class="Withdrawals bolder"><%= product.Withdrawals %></div>
+            <div class="Deposits bolder"><%= product.Deposite %></div>
+            <div class="Balance bolder"><%= product.Balance %></div>
+        </div>
+        <hr>
+    </div>
+<% } else if (index < list.length-1 ) { %>
+    <div class="product">
+        <div class="row">
+            <div class="Date "><%= product.Date %></div>
+
+            <div class="Transaction-Details ">
+                <div class="heading "><%= product.heading %></div>
+                <div><%= product.value %></div>
+            </div>
+
+            <div class="Withdrawals "><%= product.Withdrawals %></div>
+            <div class="Deposits "><%= product.Deposite %></div>
+            <div class="Balance "><%= product.Balance %></div>
+        </div>
+        <hr>
+    </div>
+<% } else { %>
+    <!-- Content for other index values -->
+    <div class="product">
+        <div class="row">
+            <div class="Date bolder"><%= product.Date %></div>
+
+            <div class="Transaction-Details bolder">
+                <div class="heading bolder"><%= product.heading %></div>
+                <div><%= product.value %></div>
+            </div>
+
+            <div class="Withdrawals bolder"><%= product.Withdrawals %></div>
+            <div class="Deposits bolder"><%= product.Deposite %></div>
+            <div class="Balance bolder"><%= product.Balance %></div>
+        </div>
+        <hr class="under-line-total">
+    </div>
+<% } %>
+
+      
+    <% }); %>
+
+  <div class="Page2of5">
+  page 2 of 5
+  </div>
+    <!-- const list = [
+  {
+    Date: "Date",
+    heading: "Transaction Details",
+    value: "WithDrawal($)",
+    Deposite: "Deposite($)",
+    Balance: "Balance($)"
+  },{
+     Date: "Date",
+    Transaction: "Transaction",
+    Withdrawals: "WithDrawal",
+    Deposite: "Deposite",
+    Balance: "Balance"
+  }
+]; -->
+<div class="next-prev">
+    <div>
+<a href="http://localhost:3000/">< prev</a>
+</div>
+ <div>
+<a href="http://localhost:3000/page3">Next  ></a>
+</div>
+</div>
+
+
+</div>
+</body>
+</html>

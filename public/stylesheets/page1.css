@@ -1,0 +1,181 @@
+body{
+     margin-right:10%;
+    margin-left: 10%;
+      background-color: white;
+      font-family: Arial, Helvetica, sans-serif;
+}
+.page1{
+   margin-right:5%;
+    margin-left: 5%;
+   
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+  
+}
+.page1-raap-heading {
+    text-align: right;
+}
+.page1-anz{
+    
+    font-size: 60px;
+    font-weight: bolder;
+    color: rgb(14, 118, 158);
+}
+.page1-anz-access{
+    font-size: 30px;
+    color:rgb(25, 161, 215);
+   font-weight: 600;
+   
+}
+
+.page1-statement{
+   font-size: 20px;
+    
+    color: rgb(26, 183, 245);
+}
+.page1-28-january{
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgb(26, 183, 245);
+}
+.page1-middle{
+    margin-left: 10%;
+    margin-top: 12%;
+    margin-bottom: 20%;
+   
+    
+}
+.page1-welcome{
+    font-size: 20px;
+    color:rgb(25, 161, 215);
+   font-weight: bold;
+}
+.details{
+    margin-top: 20px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.detail-value{
+     margin-top: 10px;
+     font-size: 20px;
+}
+.detail-value-top-margin-0{
+    font-size: 20px;
+}
+.Account-detail-opening-balance{
+    display: flex;
+     justify-content: space-between;
+}
+
+.balance{
+    margin-top: 20px;
+}
+
+.dollor{
+ color :rgb(25, 161, 215);
+ margin-right: 3px;
+ font-size: 20px;
+}
+.page1-number{
+    font-size: 40px;
+    font-weight: bold;
+    color :rgb(25, 161, 215);
+}
+.opening-balance{
+ background-color:rgb(225, 247, 255);
+ width: 80vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-bottom: 3px;
+
+ height: auto;
+  
+}
+
+.opening-balance-closing{
+   background-color:rgb(5, 183, 247);
+ width: 80vh;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-bottom: 3px; 
+ height: auto;
+ color: rgb(250, 253, 255);
+}
+.page1-number-14135{
+    font-size: 40px;
+    font-weight: bold;
+}
+.page1-under-line{
+    color: rgb(17, 175, 237);
+    height: 2px;
+    background-color:  rgb(17, 175, 237);
+    border: null;
+    border-radius: 2px;
+}
+
+footer{
+    margin-top: 10%;
+}
+.NEED-TO{
+      color: rgb(17, 175, 237);
+      font-weight: 600;
+      font-size: small;
+}
+
+.rapper-ANZ-Enquires{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+   background-color: rgb(236, 248, 253);
+  
+   
+}
+
+.ANZ-Internet{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    width: 50%;
+}
+
+.ANZ-Internet1{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0;
+    
+    width: 40%;
+}
+.Austrelia{
+    font-size: smaller;
+    color: rgb(17, 175, 237);
+}
+
+.XPRCAP0021{
+ 
+  transform: rotate(90deg);
+display: flex;
+
+position: relative;
+width: 50vh;
+
+margin-left: 140vh;
+z-index: 1;
+font-size:xx-small;
+
+}
+
+.next-prev{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap : 10%;
+}
