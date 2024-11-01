@@ -521,22 +521,43 @@ fees = [
 
 accountNumber = "123456789";
 date = { startDate: "28 JAN 2020", endDate: " 28 FEB 2020" };
-
+urlLink;
 
 app.get('/',(req,res)=>{
-     res.render("page1", { pageobj1 });
+   urlLink = req.body.urlLink;
+    next = urlLink;
+    next+='page2'
+     res.render("page1", { pageobj1,next });
 })
 app.get("/page2", (req, res) => {
-   res.render("page2", { list,accountNumber });
+ 
+  let previous=urlLink;
+  let str=urlLink;
+  str+='/page2';
+  next=str;
+   res.render("page2", { list,accountNumber,previous,next });
 });
 app.get("/page3", (req, res) => {
-  res.render("page3", { list2,accountNumber });
+ let previous = urlLink;
+ previous+='/page2'
+ let str = urlLink;
+ str += "/page4";
+ next = str;
+
+  res.render("page3", { list2,accountNumber,previous,next });
 });
 app.get("/page4", (req, res) => {
+   let previous = urlLink;
+   previous += "/page3";
+   let str = urlLink;
+   str += "/page5";
+   next = str;
   res.render("page4", { fees, date, accountNumber });
 });
 app.get("/page5", (req, res) => {
-  res.render("page5", { accountNumber });
+  let previous = urlLink;
+  previous += "/page4";
+  res.render("page5", { accountNumber,previous });
 });
 
 
