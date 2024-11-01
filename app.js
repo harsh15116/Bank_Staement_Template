@@ -541,7 +541,7 @@ app.get("/page3", (req, res) => {
  let previous = urlLink;
  previous+='page2'
  let str = urlLink;
- str += '/page4';
+ str += 'page4';
  next = str;
 
   res.render("page3", { list2,accountNumber,previous,next });
