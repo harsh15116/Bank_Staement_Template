@@ -521,10 +521,10 @@ fees = [
 
 accountNumber = "123456789";
 date = { startDate: "28 JAN 2020", endDate: " 28 FEB 2020" };
-let urlLink;
+let urlLink='https://bank-staement-template-1.onrender.com' ;
 
 app.get('/',(req,res)=>{
-   urlLink = req.body.urlLink;
+  
     next = urlLink;
    
      res.render("page1", { pageobj1,next });
@@ -561,4 +561,4 @@ app.get("/page5", (req, res) => {
 });
 
 
-app.listen(https://bank-staement-template-1.onrender.com);
+app.listen(3000);
