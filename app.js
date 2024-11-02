@@ -523,12 +523,13 @@ accountNumber = "123456789";
 accountNumberpage4="468441274";
 date = { startDate: "28 JAN 2020", endDate: " 28 FEB 2020" };
 let urlLink = "https://bank-staement-template-1.onrender.com/"; 
+page1_date = "28 JANUARY 2023 TO 28 FEBRUARY 2023";
 
 app.get('/',(req,res)=>{
   
     next = urlLink+'page2';
    
-     res.render("page1", { pageobj1,next });
+     res.render("page1", { pageobj1, next, page1_date });
 })
 app.get("/page2", (req, res) => {
  
