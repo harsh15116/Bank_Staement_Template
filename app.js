@@ -22,7 +22,7 @@ const list = [
     value: "",
     Withdrawals: "",
     Deposite: "",
-    Balance: "10624.69",
+    Balance: "10,624.69",
   },
   {
     Date: "28 JAN",
